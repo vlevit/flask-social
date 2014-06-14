@@ -56,7 +56,8 @@ def get_connection_values(response, **kwargs):
         access_token=access_token,
         secret=None,
         display_name=profile.get('username', None),
-        full_name = profile.get('name', None),
+        full_name=profile.get('name', None),
         profile_url=profile_url,
-        image_url=image_url
+        image_url=image_url,
+        email=profile.get('email', None)
     )
